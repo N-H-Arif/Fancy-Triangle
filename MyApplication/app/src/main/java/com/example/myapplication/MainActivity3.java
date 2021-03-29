@@ -25,6 +25,7 @@ public class MainActivity3 extends AppCompatActivity implements GoogleApiClient.
 
     String SiteKey = "6LfaVpAaAAAAABseMYP7HrAJn1WX6xPTnTx1A728";
     private Button BtnMove2;
+    private Button BtnMove7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,7 @@ public class MainActivity3 extends AppCompatActivity implements GoogleApiClient.
 
 
         BtnMove2 = findViewById(R.id.button3);
+        BtnMove7 = findViewById(R.id.button2);
         BtnMove2.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -72,10 +74,23 @@ public class MainActivity3 extends AppCompatActivity implements GoogleApiClient.
                 moveToActivityTwos();
             }
         });
+
+        BtnMove7.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                moveToActivitys();
+            }
+        });
     }
 
     private void moveToActivityTwos() {
         Intent intent = new Intent(com.example.myapplication.MainActivity3.this, MainActivity4.class);
+        startActivity(intent);
+    }
+
+    private void moveToActivitys() {
+        Intent intent = new Intent(com.example.myapplication.MainActivity3.this, MainActivity.class);
         startActivity(intent);
     }
 

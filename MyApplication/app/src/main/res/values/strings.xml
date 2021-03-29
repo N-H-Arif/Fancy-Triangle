@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Surge</string>
     <string name="username_e_mail">Username/E-mail:</string>
     <string name="password">Password:</string>
     <string name="login">Login</string>
